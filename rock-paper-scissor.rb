@@ -1,5 +1,5 @@
-print "Enter r for rock, p for paper and s for scissors\n"
-user_choice = gets
+print "Enter r for rock, p for paper and s for scissors: \n"
+user_choice = gets.chomp
 
 print "\nYou chose: " + user_choice
 
@@ -13,12 +13,12 @@ else
 	computer_choice = "s"
 end
 
-print "Computer chose: " + computer_choice
+print "\nComputer chose: " + computer_choice
 
-if user_choice.chomp == computer_choice.chomp
-	print "\nDraw\n\n"
+if user_choice ==  computer_choice
+	print "\n\nDraw\n\n"
 else 
-	print "\nNot draw\n\n"
+	print "\n\nNot draw\n\n"
 end
 
 
